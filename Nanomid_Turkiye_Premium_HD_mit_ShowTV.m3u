@@ -1,0 +1,60 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="TRT1.tr@SD" group-title="Türkiye Genel",TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="ATV.tr@SD" group-title="Türkiye Genel",ATV
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+
+#EXTINF:-1 tvg-id="KanalD.tr@SD" group-title="Türkiye Genel",Kanal D
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+
+#EXTINF:-1 tvg-id="Kanal7.tr@SD" group-title="Türkiye Genel",Kanal 7
+https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
+
+#EXTINF:-1 tvg-id="StarTV.tr@SD" group-title="Türkiye Genel",Star TV
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
+
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" group-title="Türkiye Genel",NOW TV
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+
+#EXTINF:-1 tvg-id="TV8.tr@SD" group-title="Türkiye Genel",TV8
+https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+
+#EXTINF:-1 tvg-id="A2TV.tr@SD" group-title="Türkiye Genel",A2 TV
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
+
+#EXTINF:-1 tvg-id="AHaber.tr@SD" group-title="Haber",A Haber
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
+
+#EXTINF:-1 tvg-id="TRTHaber.tr@SD" group-title="Haber",TRT Haber
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="NTV.tr@SD" group-title="Haber",NTV
+https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
+
+#EXTINF:-1 tvg-id="BloombergHT.tr@SD" group-title="Haber",Bloomberg HT
+https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8
+
+#EXTINF:-1 tvg-id="HalkTV.tr@SD" group-title="Haber",Halk TV
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8
+
+#EXTINF:-1 tvg-id="TGRTHaber.tr@SD" group-title="Haber",TGRT Haber
+https://canli.tgrthaber.com/tgrt.m3u8
+
+#EXTINF:-1 tvg-id="ASpor.tr@SD" group-title="Spor",A Spor
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+
+#EXTINF:-1 tvg-id="TRTCocuk.tr@SD" group-title="Çocuk",TRT Çocuk
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" group-title="Belgesel",TRT Belgesel
+https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="TRTTurk.tr@SD" group-title="Türkiye Genel",TRT Türk
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="ShowTV.tr" group-title="Türkiye Genel",Show TV
+https://ciner-live.daioncdn.net/showtv/showtv.m3u8
+
+#EXTINF:-1 tvg-id="ShowTV.tr" group-title="Türkiye Genel",Show TV (Alternative)
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
