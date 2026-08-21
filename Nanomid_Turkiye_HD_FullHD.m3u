@@ -1,0 +1,27 @@
+#EXTM3U
+#EXTINF:-1 group-title="Türkiye HD / Full HD",ATV Full HD
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",Star TV HD
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
+#EXTINF:-1 group-title="Türkiye HD / Full HD",TRT 1 HD (Auto)
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",Kanal D HD (Auto)
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+#EXTINF:-1 group-title="Türkiye HD / Full HD",NOW TV HD (Auto)
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",TV8 HD (Auto)
+https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 group-title="Türkiye HD / Full HD",TRT Haber HD (Auto)
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",NTV HD (Auto)
+https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
+#EXTINF:-1 group-title="Türkiye HD / Full HD",TRT Çocuk HD (Auto)
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",TRT Belgesel HD (Auto)
+https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",TRT Türk HD (Auto)
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",Show TV HD
+https://ciner-live.daioncdn.net/showtv/showtv.m3u8
+#EXTINF:-1 group-title="Türkiye HD / Full HD",Show TV HD (Alternative)
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
