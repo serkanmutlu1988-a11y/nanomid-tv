@@ -1,0 +1,85 @@
+name: Test IPTV Streams
+
+on:
+  push:
+    paths:
+      - "stable.m3u"
+      - "Turkiye_Stable_HD.m3u"
+      - ".github/workflows/test-iptv-streams.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-streams:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Test stable playlist
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          lines=Path("stable.m3u").read_text(encoding="utf-8").splitlines()
+          rows=[]
+          name=None
+          for line in lines:
+              line=line.strip()
+              if line.startswith("#EXTINF"):
+                  name=line.split(",",1)[1] if "," in line else "Unknown"
+              elif line.startswith("http") and name:
+                  rows.append((name,line))
+                  name=None
+          Path("/tmp/streams.tsv").write_text("\n".join(f"{n}\t{u}" for n,u in rows),encoding="utf-8")
+          PY
+
+          printf "CHANNEL\tHTTP\tVIDEO\tAUDIO\tPLAY12S\tDETAIL\n" > stream-test-report.tsv
+
+          test_one() {
+            name="$1"
+            url="$2"
+            tmp="$(mktemp)"
+            http="FAIL"; video="NO"; audio="NO"; play="FAIL"; detail=""
+
+            if curl -L -A "Mozilla/5.0" --connect-timeout 5 --max-time 12 -fsS "$url" -o "$tmp"; then
+              http="OK"
+            else
+              detail="curl_failed"
+            fi
+
+            probe="$(timeout 18 ffprobe -v error -user_agent "Mozilla/5.0" -show_entries stream=codec_type,codec_name -of csv=p=0 "$url" 2>&1 || true)"
+            echo "$probe" | grep -q "video" && video="YES"
+            echo "$probe" | grep -q "audio" && audio="YES"
+            if [ "$video" = "YES" ] && [ "$audio" = "YES" ]; then
+              if timeout 25 ffmpeg -hide_banner -loglevel error -user_agent "Mozilla/5.0" -t 12 -i "$url" -map 0:v:0? -map 0:a:0? -f null - >/tmp/ffout 2>/tmp/fferr; then
+                play="OK"
+              else
+                detail="$(tr '\n' ' ' </tmp/fferr | cut -c1-220)"
+              fi
+            else
+              [ -z "$detail" ] && detail="$(echo "$probe" | tr '\n' ' ' | cut -c1-220)"
+            fi
+
+            printf "%s\t%s\t%s\t%s\t%s\t%s\n" "$name" "$http" "$video" "$audio" "$play" "$detail"
+            rm -f "$tmp"
+          }
+          export -f test_one
+
+          while IFS=$'\t' read -r name url; do
+            printf '%s\0%s\0' "$name" "$url"
+          done < /tmp/streams.tsv | xargs -0 -n2 -P4 bash -c 'test_one "$0" "$1"' >> stream-test-report.tsv
+
+          cat stream-test-report.tsv
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: stream-test-report
+          path: stream-test-report.tsv
+          retention-days: 7
