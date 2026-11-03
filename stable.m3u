@@ -3,6 +3,8 @@
 # Aktualisiert: 2026-11-03
 # NOW und ATV bewusst ausgeschlossen: TV-/Wiedergabeprobleme
 
+#EXTINF:-1,ATV 480p Stable
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_480p.m3u8
 #EXTINF:-1,Show TV
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
 #EXTINF:-1,Show TV Yedek
