@@ -5,6 +5,7 @@ on:
     paths:
       - "stable.m3u"
       - "Turkiye_Stable_HD.m3u"
+      - "stream-candidates.m3u"
       - ".github/workflows/test-iptv-streams.yml"
   workflow_dispatch:
 
@@ -26,8 +27,14 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          lines=Path("stable.m3u").read_text(encoding="utf-8").splitlines()
+          files=["stable.m3u"]
+          if Path("stream-candidates.m3u").exists():
+              files.append("stream-candidates.m3u")
           rows=[]
+          lines=[]
+          for fn in files:
+              lines += Path(fn).read_text(encoding="utf-8").splitlines()
+          
           name=None
           for line in lines:
               line=line.strip()
