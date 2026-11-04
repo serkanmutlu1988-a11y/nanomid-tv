@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1,TRT Haber
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Cocuk
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Turk
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
