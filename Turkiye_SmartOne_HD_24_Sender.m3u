@@ -1,0 +1,49 @@
+#EXTM3U
+#EXTINF:-1,Show TV
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+#EXTINF:-1,Show TV Yedek
+https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
+#EXTINF:-1,Kanal D
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+#EXTINF:-1,Star TV
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3&sid=8l4w3lst4co5
+#EXTINF:-1,TRT Haber
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,Euro D
+https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
+#EXTINF:-1,CNBC-e
+https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
+#EXTINF:-1,NTV
+https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
+#EXTINF:-1,Halk TV
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8
+#EXTINF:-1,TRT Cocuk
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Turk
+https://tv-trtturk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Muzik
+https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Avaz
+https://tv-trtavaz.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TJK TV
+https://tjktv-live.tjk.org/tjktv.m3u8
+#EXTINF:-1,Minika Cocuk
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
+#EXTINF:-1,Minika Go
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
+#EXTINF:-1,TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT 2
+https://tv-trt2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Belgesel
+https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Spor
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Spor Yildiz
+https://tv-trtspor2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,TRT Diyanet Cocuk
+https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,NOW TV HD 720p (Test)
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
+#EXTINF:-1,ATV Full HD 1080p (Test)
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
